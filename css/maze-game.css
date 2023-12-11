@@ -1,0 +1,258 @@
+/*IMPORT*/
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+
+/*BODY*/
+body {
+  background-color: #FBFAF6;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+/*HEADER*/
+/*Style for title web*/
+.header-first__title-web {
+  color: #0F0F0F;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/*MAIN*/
+/*Style for title game*/
+main {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+}
+
+.input-control__layout {
+  margin-top: 38px;
+}
+
+.game-title__text--top {
+  color: #262525;
+  font-family: Inter, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.game-title__text--bottom {
+  color: #FF358A;
+  font-family: 'Joti One', serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/*Style for instruction*/
+.game-instruction {
+  all: unset;
+  display: flex;
+  word-wrap: break-word;
+  width: 316px;
+  color: #272727;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*SECTION*/
+/*Style for input control layout*/
+.input-control__layout {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+/*Style for control*/
+.input-control {
+  display: flex;
+  width: 221px;
+  height: 221px;
+  flex-direction: column;
+  row-gap: 22px;
+  border-radius: 10px;
+  background: #FFF;
+  align-items: center;
+}
+
+.input-control__title-layout {
+  width: 68%;
+  margin-top: 31px;
+}
+
+/*Style for input control title*/
+.input-control__title {
+  color: #262525;
+  font-family: Inter, sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.input-control__subtitle {
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input-control__title--child {
+  color: #262525;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/*Style for input*/
+.input-control__label {
+
+}
+
+.input-control__value {
+  border-width: 0;
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
+
+
+  &::-webkit-color-swatch {
+    border-radius: 2px;
+    border-width: 0;
+    scale: 2;
+
+  }
+}
+
+#radius, #size-maze {
+  width: 50px;
+}
+
+.input-control__input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+}
+
+.input-control__preview {
+  width: 13px;
+  height: 13px;
+  background: #4966FF;
+}
+
+/*CANVAS GAME*/
+.canvas-game {
+  /*width: 750px;*/
+  /*height: 644px;*/
+  background-color: #1E1E1E;
+  border-radius: 20px;
+  display: block;
+  image-rendering: pixelated;
+  z-index: 1;
+}
+
+.game-canvas-part {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.robot-solve__layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  gap: 7px;
+  translate: 0 calc(-36px + -40px) 0;
+  margin-bottom: calc(-36px + -40px);
+}
+
+.robot-solve__button--info {
+  color: #AAA;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+  width: 108px;
+  word-wrap: break-word;
+}
+
+.robot-solve__button {
+  all: unset;
+
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  background: #FF358A;
+
+  color: #FFF;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  &:hover {
+    background-color: #f8237d;
+  }
+
+  &:active {
+    background-color: #fd0a71;
+    scale: 0.95;
+  }
+}
+
+.input-control__layout--div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+input[type='number'] {
+  border-radius: 5px;
+  background: #262525;
+  box-shadow: 2px 2px 4px 0px rgba(207, 169, 185, 0.60);
+
+  color: #FFF;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input[type='number']:focus {
+  outline-color: #FF358A;
+}
+.input-control__label input[type="number"]::-webkit-inner-spin-button {
+  background-color: #007BFF; /* Change this to your desired color */
+  border-radius: 3px;
+}
+
+.input-control__label input[type="number"]::-webkit-outer-spin-button {
+  background-color: #007BFF; /* Change this to your desired color */
+  border-radius: 3px;
+}

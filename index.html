@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/maze-game.css">
+  <link href='https://fonts.googleapis.com/css?family=Joti One' rel='stylesheet'>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+<header class="header-first">
+  <div class="header-first__title-web">
+    BACH .
+  </div>
+</header>
+<main>
+  <section class="game-information-part">
+
+    <div class="game-title">
+      <div class="game-title__text--top">
+        ROBOT GAME
+      </div>
+      <div class="game-title__text--bottom">
+        MAZE
+      </div>
+    </div>
+    <pre class="game-instruction">
+    The game creates a maze, provides it to
+    your robot, and then allows you to witness
+    the process of the robot solving the maze
+    using famous algorithms in algorithmic solving!
+  </pre>
+    <section class="input-control__layout">
+
+      <section class="input-control">
+        <div class="input-control__title-layout">
+          <div class="input-control__title">
+            Robot
+          </div>
+          <div class="input-control__subtitle">
+            Style for your robot
+          </div>
+        </div>
+        <div class="input-control__layout--div">
+          <div class="input-control__div">
+            <div class="input-control__div">
+              <div class="input-control__title--child">
+                Robot
+              </div>
+              <label class="input-control__label">
+                <input type="color" class="input-control__value" id="robot" value="#FF358A">
+              </label>
+            </div>
+          </div>
+
+          <div class="input-control__div">
+            <div class="input-control__div">
+              <div class="input-control__title--child">
+                Delay
+              </div>
+              <label class="input-control__label">
+                <input type="number" class="input-control__value" id="radius" max="10">
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="input-control">
+        <div class="input-control__title-layout">
+          <div class="input-control__title">
+            Maze
+          </div>
+          <div class="input-control__subtitle">
+            Style for your maze
+          </div>
+        </div>
+
+        <div class="input-control__layout--div">
+          <div class="input-control__div">
+            <div class="input-control__div">
+              <div class="input-control__title--child">
+                Line
+              </div>
+              <label class="input-control__label">
+                <input type="color" class="input-control__value" id="line" value="#FF358A">
+              </label>
+            </div>
+          </div>
+
+          <div class="input-control__div">
+            <div class="input-control__div">
+              <div class="input-control__title--child">
+                Size
+              </div>
+              <label class="input-control__label">
+                <input type="number" class="input-control__value" id="size-maze" value="">
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+
+  <section class="game-canvas-part">
+
+    <canvas class="canvas-game">
+      <div class="robot"></div>
+    </canvas>
+    <div class="robot-solve__layout">
+      <button class="robot-solve__button">
+        RUN
+      </button>
+      <div class="robot-solve__button--info">
+        Click to let robot solve
+        your maze
+      </div>
+    </div>
+  </section>
+</main>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/robot.js"></script>
+<script type="module" src="js/canvas.js"></script>
+<script type="module" src="js/game.js"></script>
+
+</body>
+
+</html>
